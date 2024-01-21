@@ -1,0 +1,392 @@
+body {
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+    background: rgb(240, 240, 240);
+    outline: 2px rgb(235, 235, 235) solid;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(177, 177, 177);
+    border-radius: 4px;
+}
+
+header {
+/*Header background image*/
+    background-image: url('img/Heading.jpeg');
+    background-size: cover;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+
+/*Title and description general style*/
+    h1{
+        margin:0;
+        color: rgba(255, 246, 239, 0.9);
+        padding: 10px 0 0 15px;
+        font-size:80px;
+        font-family: 'Philosopher', sans-serif;
+    }
+
+    p {
+        background: rgba(27, 20, 4, 0.6);
+        color: rgb(255, 255, 255);
+        border: rgba(24, 9, 5, 0.168) 2px solid;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 15px 10px;
+        font-size: 22px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 100;
+        width: 100%; 
+        position: absolute;
+        bottom: 0;
+
+    }
+}
+
+
+section {
+/*Colors and background of the section of the page*/
+    background: rgb(148, 114, 75);
+    border-top: 3px rgba(136, 99, 57, 0.9) solid;
+
+/*Configuration of the section*/
+    overflow: hidden;
+    article {
+        margin: 0 15px;
+    }
+
+/*Titles style*/
+    h2 {
+        color: rgb(73, 43, 34);
+        font-family:'Lora', sans-serif;
+        font-size: 30px;
+        margin: 15px 0 15px 10px;
+    }
+
+/*General content style*/
+    p, ol{
+        box-sizing: border-box;
+        color: rgb(32, 27, 20);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        max-width: 900px;
+        text-indent: 1rem;
+    
+        /*Titles of the items of the lists style*/
+        .itemTitle {
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        /*List items style*/
+        li {
+            list-style-type:circle;
+        }
+    }
+
+    #othersArtilces {
+        width: 100%;
+        margin:0;
+        padding: 15px 0;
+        background: rgb(236, 228, 205);
+
+        h2 {
+            color: black;
+            font-family: Playfair Display, sans-serif;
+            margin:12px 15px;
+        }
+
+        p, ul {
+            color: black;
+            font-family: Urbanist, sans-serif;
+            font-size: 22px;
+            font-weight: 300;
+            margin: 10px 15px;
+        }
+    }
+    
+    #frappeList {
+        li {
+            list-style-type: decimal;
+        }
+    }
+
+    .contentBox {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+    .contentBoxFlex {
+        display: inline-block;
+        position: relative
+    }
+    .contentBoxRight {
+        width:100%;
+        display: inline-block;
+        position: relative;
+        div {
+            float: right;
+        }
+    }
+
+/*Images*/
+.image {
+    transition: box-shadow 0.5s ease;
+    border:rgb(252, 244, 233) 3px solid;
+    border-radius: 20px;
+    vertical-align:top;
+}
+
+.image:hover {
+    box-shadow: 0 0 1em rgb(34, 24, 15, 0.664);
+}
+
+/*Epigrphs*/
+.epigraph {
+    transition: text-shadow 0.15s ease;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(255, 255, 255)
+}
+.epigraph:hover {
+    color: rgb(250, 250, 250);
+    text-shadow: 4px 3px 8px rgb(105, 77, 46);
+}
+
+/*Images size and shape & epigraphs spot styles*/
+
+    /*------Images------*/
+    .imgStyle1 {
+        width: 350px;
+        display: inline-block;
+        margin: 0 15px 0 0;
+        position: absolute;
+        top: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    .imgStyle2 {
+        width: 200px;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .imgStyle3 {
+        width: 200px;
+        margin-top: 15px;
+        float: left;
+    }
+
+    .imgStyle4 {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+
+    /*-------Epigrpahs-------*/
+    .epigraph1{
+        text-align: center;
+        text-indent: 0;
+    }
+
+    .epigraph2 {
+        float: right;
+        width: 150px;
+        margin: 0 8px 0 0;
+    }
+
+    .epigraph3 {
+        float: left;
+        width: 150px;
+        margin: 0 8px 0 0;
+    }
+
+    /*-------Others------*/
+    .noMargin {
+        margin: 0;
+    }
+
+    .leftMargin {
+        margin: 0 0 0 8px;
+    }
+
+    .topMargin {
+        margin: 15px 0 0 0;
+    }
+    #machiattoMargin {
+        margin: 15px 0 0 8px;
+    }
+
+    #frappeImg {
+        right: 0;
+    }
+
+    #latteImg{
+        width: 245px;
+    }
+
+    #latteEp{
+        width: 105px;
+    }
+
+    #mochaImg {
+        width: 220px;
+    }
+
+    #mochaEp {
+        width: 130px;
+    }
+
+    #carajilloImg {
+        width: 245px;
+    }
+
+    #carajilloEp {
+        width: 105px;
+    }
+
+    #americanoImg {
+        width: 225px;
+    }
+
+    #americanoEp {
+        width: 125px;
+    }
+
+    #ollaEp {
+        margin: 15px 8px 0 0;
+    }
+    #irlandesImg {
+        width: 230px;
+    }
+    #irlandesEp {
+        margin: 15px 0 0 8px;
+        width: 120px;
+    }
+/*Content background*/
+    .background {
+        transition: box-shadow 0.5s ease;
+        background: rgb(252, 244, 233);
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 1px 20px;
+    }
+    .background:hover {
+        box-shadow: 0 0 1em rgb(34, 24, 15, 0.664);
+    }
+
+    .background2 {
+        transition: box-shadow 0.5s ease;
+        width: calc(48% - 4px);
+        height: 350px;
+        display: inline-block;
+        margin: 0 1% 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: rgb(255, 255, 255);
+        border-bottom: 5px rgb(255, 255, 255)  solid;
+        border-radius: 7px;
+    }
+
+    .background2:hover {
+        box-shadow: 0 0 1em rgb(90, 88, 85);
+    }
+    .background2::-webkit-scrollbar {
+        width: 8px;
+    }
+    .background2::-webkit-scrollbar-thumb {
+        background: rgb(194, 194, 194);
+        border: 1px rgb(255,255,255) solid;
+        border-radius: 7px;
+    }
+
+    #gradient{
+        margin:15px 0 0;
+        height: 20px;
+        background-image: linear-gradient(to top, rgb(236, 228, 205), rgb(208, 200, 178));
+    }
+/*Divicions style*/
+    hr {
+        margin: 1rem 0 0 0;
+        border: 1px rgb(73, 45, 36) solid;
+        font-family: Palyfair Display, sans-serif;
+    }
+
+/*Section links style*/
+
+    /*----------Type 1-----------*/
+    .aSec{
+        color: rgb(42, 37, 30);
+    }
+    .aSec:hover {
+        color:rgb(102, 97, 90);
+    }
+    .aSec:active {
+        color: rgb(42, 37, 30);
+    }
+
+    /*----------Type 2-----------*/
+    .aSec2 {
+        color: rgb(94, 63, 43);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        text-decoration: none;
+        ;
+    }
+    .aSec2:hover {
+        color: rgb(252, 244, 233);
+    }
+
+    .aSec2:active {
+        color: rgb(94, 63, 43);
+    }
+    /*-----------Type 3-----------*/
+    .txtLink {
+        color: rgb(32, 27, 20);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .txtLink:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .txtLink:active {
+        color: rgb(32, 27, 20);
+        text-decoration: none;
+    }
+    
+}
+
+footer {
+    background: rgb(37, 37, 33);
+    padding: 15px;
+    height: 18px;
+    a {
+        float: right;
+        margin: 0 5px;
+        color: white;
+        font-family: Montserrat, sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(182, 182, 182);
+    }
+
+    a:active {
+        color: white;
+    }
+}

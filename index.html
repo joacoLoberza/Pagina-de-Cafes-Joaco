@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Title tab of the of the page-->
+    <title>Coffee Page</title>
+
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!--Preconect link for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--Links for fonts of Google Fonts
+
+    Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--Lora-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    
+    <!--Philosopher-->
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    
+    <!--Urbanist-->
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Urbanist:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+
+    <!--Playfair Display-->
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@100;400&family=Urbanist:wght@100&display=swap" rel="stylesheet">
+
+
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="author" content="Joaquín Loberza">
+    <meta name="description" content="This is a page to learn to do coffees.">
+    <meta name="keywords" content="como hago cafe, como hago cafe? ¿Cómo hago café?, espresso, latte, cortado, frappe, cafe frio, cafe, como usar cafetera">
+</head>
+
+
+<body>
+    <header>
+
+        <!--Title and decription of the page-->
+        <h1 id="start">Todo Cafés</h1>
+        <p>
+            Aprende a preparar todo tipo de cafés de forma clásica en esta página y disfruta de desayunar como en una cafetería.
+        </p>
+
+    </header>
+
+<!--
+    Classes dictionary:
+
+    1-ContentBox: Has a display type inline block and ocpupies all scream.
+
+    2-ContentBoxFlex: Has a display type inline block.
+
+    3-contentBoxRight: Put every divs to the right. Has position relative for move objects absoluts inside and ocupies all screen.
+
+    4-aSec (num): This class are for the style of links. "a" from tipe of tag a, and "Sec" from the Section of the doc.
+    
+    5-background: Has the style of the text boxes. And it´s display is inline-block.
+
+    Other classes or ID are for aesthetic styles from the tags or movie into the page.
+-->
+    <section>
+        <article> <!--ESPRESSO-->
+            <h2 id="espresso">Esperesso</h2>
+
+            <div class="contentBoxRight">
+
+                <!--Div from image and epigraph-->
+                <div class="imgStyle1">
+                    <img src="img/Espresso.jpeg" class="image"/>
+
+                    <p class="epigraph epigraph1">
+                        En está imágen se puede ver un espresso sobre un individual decorado con flores.
+                    </p>
+                </div>
+
+                <!--Div for the text content-->
+                <div class="background">             
+                    <p>
+                        El espresso es un café solo y puro que puede prepararse de varias formas. Las mejor para obtener un espresso puro es utilizando una cafetera. Pero en caso de no disponer de una puedes usar una cafetera de filtro o una prensa francesa. Como última forma puedes usar café soluble, pero es lo menos recomendable y no será lo mismo.
+                    </p>
+
+                    <p>
+                        A continucación, te mostraremos como preprar un espresso con los métodos mencionados anteriormente:
+                    </p>
+
+                    <ol>
+                        <li id="espressoMaker"> <!--Coffee Maker-->                            <span class="itemTitle">Cafetera:</span> En este caso, lo primero que hay que hacer es depuar la cafetera, encenciendola y dejando caer un poco de agua y asegurarse de que todos los elementos estén limpios.
+                            <br>
+                            Luego coloca 1oz (28,3 gr) de café molido fino en el portafiltro y comprímelo, luego coloca la taza que usaras bajo él y enciende la cafetera, en caso de tener varias opciones, precione el botón de espresso. Espera entre 25 y 30 segundos y apagala.
+                        </li>
+                        <br>
+
+                        <li id="espressoFilterMaker"> <!--Filter Coffee Maker-->
+                            <span class="itemTitle">Cafetera de Filtro: </span> Para preparar un espresso aquí primero asegurate de que no haya café usado en el filtro y que esté limpia.                            <br>
+                            Luego, coloca dos cucharaditas (10 gr) de café molido fino por taza (180 ml), rellena el tanque con el agua que utilizaras y enciende la cafetera hasta que notes que se ha filtrado todo el café en la jarra.
+                        </li>
+                        <br>
+
+                        <li id="espressoPress"> <!--French Press-->
+                            <span class="itemTitle">Prensa Francesa:</span> Primero calienta la prensa con agua caliente para luego vaciarla, luego coloca 10 gr de café molido mediano por cada 100 ml de agua caliente (idealmente a 95° C) y esperar 4 minutos.
+                            <br>
+                            Una vez hecho esto, quita la espuma que se forma en la superficie revuelve el café por 2 minutos, luego espera 5 misnutos y coloca el filtro por sobre la superficie del agua.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <hr>
+        </article>
+
+        <article> <!--MACHIATTO-->
+
+            <!--Div for the text content-->
+            <div class="contentBoxFlex">
+                <h2>Machaito</h2>
+
+                <div class="background">
+                    <p>
+                        El machiato es un <a href="#espresso" class="txtLink">espresso</a> que contiene una pequeña manchita de leche microespumada, se toma en una taza pequeña de alredador de 180 ml. Para ello prepara leche espumada o microespumada y colocale dos cucharaditas en el centro.
+                    </p>
+                </div> <br>
+            
+                <a href="#microespuma" class="aSec2">¿Cómo micoresoumar leche?</a>
+                <a href="#espuma" class="aSec2">¿Cómo espumar leche?</a>
+            </div>
+
+            <!--Image and epigraph-->
+            <img src="img/Machiatto.jpeg" class="image imgStyle2"/>
+
+            <p class="epigraph epigraph2 topMargin">
+                A la derecha se puede observar un machiato, el cual se ve levemente manchado con lehce espumada.
+            </p>
+
+            <hr>
+        </article>
+
+        <article> <!--CORTADO-->
+
+            <!--Div for the contet-->
+            <div class="contentBoxFlex">
+                <h2>Cortado</h2>
+                    
+                <div class="background">
+                    <p>
+                        El cortado es una bebida originaria de España que se toma tradicionalmente en una taza pequeña de alrrededor de 180 ml. Contiene media taza de <a href="#espresso" class="txtLink">espresso</a> y otra media taza de leche espumada o microespumada.
+                    </p>
+                </div> <br>
+
+                <a class="aSec2" href="#microespuma">¿Cómo micoresoumar leche?</a>
+                <a class="aSec2" href="#espuma">¿Cómo espumar leche?</a>
+            </div>
+
+            <!--Image and epigraph-->
+            <p class="epigraph epigraph2" id="machiattoMargin">
+                Aquí podemos observar una imágen de un cortado, servido en una taza pequeña con la mitad de leche espumada.
+            </p>
+
+            <img src="img/Cortado.jpeg" class="image imgStyle2"/>
+
+            <hr>
+        </article>
+
+        <article> <!--CAPUCCINO-->
+            <h2>Capuccino</h2>
+
+            <!--Div for the content-->
+            <div class="contentBoxRight">
+
+                <!--Div for the image and epigraph-->
+                <div class="imgStyle1">
+                    <img src="img/Capuccino.jpeg" class="image"/>
+
+                    <p class="epigraph epigraph1">
+                        Aquí se aprecia un capuccino, espumoso y cremoso, con apenas cacao en polvo.
+                    </p>
+                </div>
+
+                <!--This is a div for order the content better-->
+                <div>
+
+                    <!--Div for the text content-->
+                    <div class="background">
+                        <p>
+                            El capuccino es una bebida originaria de Austria (aunque muchos piensan que es originaria de Italia). Generalmente se confunde con el Mocha. Pero clasicamente no lleva chocolate.
+                        </p>
+                        <p>
+                            Primero vierte 30 ml de <a href="#espresso" class="txtLink">espreso</a> en una taza de 180 ml. Luego, espuma aproximadamene 100 ml de leche, puede estar caliente o fría. El resto de la taza debe ser ocupado por una mitad de leche y otra mitad de espuma. 
+                        </p>                        
+                        <p>
+                            Para ello se inclina un poco la taza, de modo que la leche no impacte directamente con el espresso y se tapa con una cuchara la boquilla de la jarra que contenga la leche, permitiendo salir primero la leche estancada en el fondo y luego retirar la cuchara permitiendo salir la espuma para terminar de rellenar la taza.
+                        </p>
+                        <p>
+                            En caso de que quieras darle un dulzor especial, puedes espolvorear cacao en polvo suavemente en la superficie del espresso antes de verter la leche y hacer lo mismo por encima para decorar.
+                        </p>
+                    </div> <br>
+
+                    <a class="aSec2" href="#microespuma">¿Cómo micoresoumar leche?</a>
+                    <a class="aSec2" href="#espuma">¿Cómo espumar leche?</a>
+                </div>
+            </div>
+
+            <hr>
+        </article>
+
+        <article> <!--LATTE-->
+            <h2>Latte</h2>
+
+            <!--Div for the content-->
+            <div class="contentBox">
+
+                <!--Image and epigraph-->
+                <p class="epigraph epigraph2 leftMargin" id="latteEp">
+                    Aquí podemos ver un latte servido en una taza de 250ml, con latte art de un corazón.
+                </p>
+    
+                <img src="img/Latte.jpeg" class="image imgStyle2 noMargin" id="latteImg"/>
+
+                <!--Div for the text content-->
+                <div class="background">
+                    <p>
+                        El late es un café con leche que se toma en un vaso mediano de 250 ml aproximadamente.
+                    </p>
+                    <p>
+                        Para prepararlo, en el vaso coloque de 50 ml de <a href="#espresso" class="txtLink">espresso</a>. Luego espume 150 ml de leche y agregelos desepacio al espresso, inclinadno el vaso al final incline un poco más el vaso y acerque la jarra.
+                    </p>
+                    <p>
+                        Al final, si lo haz hecho bien, debería quedar un 1 cm de espuma flotando, si quiere puede hacer latte art en ella. El resto debería estar mezclado.
+                    </p>
+                </div> <br>
+
+                <a class="aSec2" href="#microespuma">¿Cómo micoresoumar leche?</a>
+                <a class="aSec2" href="#espuma">¿Cómo espumar leche?</a>
+            </div>
+
+            <hr>
+        </article>
+
+        <article> <!--MOCHA-->
+            <h2>Mocha</h2>
+
+            <!--Div for the content-->
+            <div class="contentBox">
+
+                <!--Image and epigraph-->
+                <img src="img/Mocha.jpeg" class="image imgStyle2 noMargin" id="mochaImg"/>
+
+                <p class="epigraph epigraph2" id="mochaEp">
+                    Aquí podemos apreciar un mocha, es una bebida más grande que el capuccino y lleva chocolate.
+                </p>
+
+                <!--Div for the text content-->
+                <div class="background">
+                    <p>
+                        El mocha es un café con leche y chocolate. Se prepara en una taza mediana de aproximadamente 250 ml.
+
+                    </p>
+                    <p>
+                        Para ello sirve 50 ml  de <a href="#espresso" class="txtLink">
+                        espresso</a> y raya una barrita de chocolate e incorporalo con dos cucharaditas de cacao en polvo.
+                    </p>
+                    <p>
+                        Finalemente caliente 150 ml de leche y espumela para luego agragarla al café. Puedes decorar espolvoreando cacao en polvo.
+                    </p>
+                </div> <br>
+
+                <a class="aSec2" href="#microespuma">¿Cómo micoresoumar leche?</a>
+                <a class="aSec2" href="#espuma">¿Cómo espumar leche?</a>
+            </div>
+
+            <hr>
+        </article>
+
+        <article> <!--RISTRETTO-->
+            <h2>Ristretto</h2>
+
+            <!--Div for the cotnent-->
+            <div class="contentBoxRight">
+
+                <!--Div for the image and epigraph-->
+                <div class="imgStyle1">
+                    <img src="img/Ristretto.jpeg" class="image"/>
+
+                    <p class="epigraph epigraph1">
+                        Un ristretto es denso y pequeño.
+                    </p>
+               </div>
+
+                <!--Dif for the text contetnt-->
+                <div class="background">
+                    <p>
+                        Un ristretto es un espresso, pero más amargo y en menor cantidad. Al igual que el espresso, se puede preparar en una cafetera como la mejor opcion, pero de lo contrario también se puede preparar en una cafetera de filtro o prensa francesa.
+                    </p>
+                    <ol style="list-style-type: circle;">
+                        <li>
+                            <span class="itemTitle">Cafetera:</span> Haz el mismo procedimiento que el espresso, pero por 15 a 20 segundos.
+                            <br><br>
+
+                            <!--Class "aSec" is aSection, the links from the section-->
+                            <a href="#espressoMaker" class="aSec">¿Cómo preparo un espresso en una cafetera?</a>
+                            <br><br>
+                        </li>
+                        <li>
+                            <span class="itemTitle">Cafetera de Filtro y Prensa Francesa:</span> Haz el mismo procedimiento que el espresso, pero con 4 cuacharaditas de café molido por taza de 180 ml.
+                            <br><br>
+                            <a href="#espressoFilterMaker" class="aSec">¿Cómo preparo un espresso en una cafetera de filtro?</a>
+                            <br>
+                            <a href="#espressoPress" class="aSec">¿Cómo preparo un espresso en una prensa francesa?</a>
+                            <br><br>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <hr>
+        </article>
+
+        <article> <!--CARAJILLO-->
+            <h2>Carajillo</h2>
+
+            <!--Div for the text content-->
+            <div class="background">
+                <p>
+                    El carajillo es una bebida que incluye alchool y se origina en la época revolucionaria de Cuba. En la que los soldados españoles la tomaban para ganar "corajillo".
+                </p>
+
+                <p>
+                    Para prepararlo, en una coctelera coloca 4 hielos grandes, 60 ml de <a href="#espresso" class="txtLink">espresso</a> y 60 ml de licor, perferentemente Licor 43. Luego agita 15 segundos y viertelo en un vaso lleno de hielos.
+                </p>
+
+                <p>
+                    También puedes hacerlo direcatamente en el vaso, pero sin la coctelera, revolviendo. La diferencia es que el sabor a café será más fuerte y menos espumoso.
+                </p>
+            </div>
+
+            <!--Image and epigraph-->
+            <img src="img/Carajillo.jpeg" class="image imgStyle2 noMargin" id="carajilloImg"/>
+
+            <p class="epigraph epigraph2" id="carajilloEp">
+                En esta imágen se puede observar un carajillo fresco y recién preparado en la coctelera.
+            </p>
+
+            <hr>
+        </article>
+
+        <article> <!--OLLA COFFEE-->
+
+            <!--Div for the content-->
+            <div class="contentBoxRight">
+
+                <!--Div for the text content-->
+                <div>
+                    <h2>Café de Olla</h2>
+
+                    <div class="background">
+                        <p>
+                            El café de olla se prepara, como el nombre lo indica, en una olla. Para ello, en una olla vierte 6 tazas de agua, coloca una rama de canela y 3 panelas. Cuando la panela se disuelva, agraga media taza de café, revuelve y saca la olla del fuego. Dejala reposar tapada 10 minutos y estara lista para servir.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Image and epigraph-->
+                <p class="epigraph epigraph3" id="ollaEp">
+                    Un café de olla es más dulce y liviano que el espresso. Si quieres, en la preparación puedes agregar canela, clavos de olor, etc.
+                </p>
+
+                <img src="img/Olla.jpeg" class="image imgStyle3"/>
+            </div>
+
+            <hr>
+        </article>
+
+        <article> <!--AMERICANO-->
+
+            <!--Div for the content-->
+            <div class="contentBoxRight">
+
+                <h2>Americano</h2>
+
+                <!--Div for the text content-->
+                <div class="background">
+                    <p>
+                        El americano es un café cuyo origen se remonta a la segunda guerra mundial. Cuando los soldados estadounidenses llegaron a Italia y pedían cafés en las cafeterías, les deban espressos pequeños y concentrados. Ellos decidieron crear un café más familiar a su país, menos concentrado y más abundante.
+                    </p>
+                    
+                    <p>
+                        Etonces, para prepara un americano, simplemente prepara un <a href="#espresso" class="txtLink">espresso</a> de 180 ml y viertelo en una de 250 ml o más. Agregale agua caliente (es muy importante que no hierva para no arruinar las zontas del café). Y así ya puedes disfrutar de tu americano.
+                    </p>
+                </div>
+
+                <!--Image and epigraph-->
+                <img src="img/Americano.jpeg" class="image imgStyle3 noMargin" id="americanoImg"/>
+
+                <p class="epigraph epigraph3 leftMargin" id="americanoEp">
+                    Como se ve en la imágen, el americano es un café menos denso y más grande. En este caso es en un vaso de 250ml.
+                </p>                
+            </div>
+
+            <hr>
+        </article>
+
+        <article> <!--FRAPPE-->
+            <h2>Frappe</h2>
+            
+            <!--Div for the content-->
+            <div class="contentBox">
+
+                <!--Div for the text content-->
+                <div class="background">
+                    <p>
+                        El frappe es una bebida fría que puede hacerse de diferentes gustos.
+                    </p>
+
+                    <p>
+                        Puedes prepararlo usando un vaso entero de hielo (el tamaño es a gusto), 3/4 de leche del mismo vaso, 3 cucharaditas de azucar y una de café soluble, en caso de no tener usa 30 ml de <a href="#espresso" class="txtLink">espresso</a>, aun que si lo concideras necesario, puedes usar más o menos. Todo eso va en la licuadora junto con lo que decidas colocarle para darle gusto, asegurate de previamente haber molido un poco el hielo en un bolsa, golpenadolo.
+                    </p>
+
+                    <p>
+                        Aquí te daremos algunas recomendaciones que puedes agregarle para darle gusto:
+                    </p>
+                    
+                    <ol id="frappeList">
+                        <li>Un vaso de frutillas.</li>
+                        <li>Dos cucharadas de dulce de leche y dos cucharaditas de ecencia de vainilla.</li>
+                        <li>Una barrita (10 gr aproximadamente) de chocolate derretido a baño maría y dos cucahraditas de escencia de vainilla. Si quieres agraga cacao en polvo a gusto.</li>
+                    </ol>
+
+                    <p>
+                        Si lo deseas, antes de servir, puedes decorar con jarabe del gusto que desees o con crema chantilly.
+                    </p>
+                </div> <br>
+                <a class="aSec2" href="#chantilly">¿Cómo hacer crema chantilly?</a>
+
+                <!--Div for the image and epigraph-->
+                <div class="imgStyle1" id="frappeImg">
+                    <img src="img/Frappe.jpeg" class="image"/>
+    
+                    <p class="epigraph epigraph1">
+                        Aquí podemos ver un frappe de chocolate, es una bebida fría, ideal para el verano.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+        </article>
+            
+        <article> <!--COLD COFFEE-->
+            <h2>Café Frío</h2>
+
+            <!--Div for the content-->
+            <div class="contentBoxRight">
+
+                <!--Div for theimage and epograph-->
+                <div class="imgStyle1">
+                    <img src="img/Café Frío.jpeg" class="image"/>
+
+                    <p class="epigraph epigraph1">
+                        Aquí vemos en la superficie del café frío la cremosidad que buscamos al usar el batidor o la prensa.
+                    </p>
+                </div>
+
+                <!--Div for the text content-->
+                <div>
+                    <div class="background">
+                        <p>
+                            El café frío es similar al frappe, pero no se licúa ni lleva otros ingredientes para darle sabor especial.
+                        </p>
+                        <p>
+                            La preparación conciste en usar un vaso lleno de hielos. En una taza aparte puedes colocar una cucharadita de café soluble y 30 ml de agua caliente (sin llegar al hervor para no arruinar las zontas del café). En caso de no tener café soluble, puedes usar 30 ml de <a href="#espresso" class="txtLink">espresso</a> ya preparado del modo que te sea preferible. Luego agrega una cucharadita de azúcar y batelo con un batidor eléctrico pequeño hasta que se haga cremoso. En su defecto, usar una prensa francesa también puede funcionar.
+                        </p>
+                        <p>
+                            Aparte, espuma 100 ml de leche fría con un vaporizador o una prensa fransesa. Una vez hecho esto, vierte el café en el vaso con hielos y luego agrega la leche espumada. Finalemente revuelve un poco para integrar un poco todo.
+                        </p>
+                    </div> <br>
+
+                    <a class="aSec2" href="#microespuma">¿Cómo micorespumar leche?</a>
+                    <a class="aSec2" href="#espuma">¿Cómo espumar leche?</a>
+                </div>
+            </div>
+
+            <hr>
+        </article>
+    
+        <article> <!--IRISH COFFE-->
+
+            <!--Div for the content-->
+            <div class="contentBoxFlex">
+                <h2>Café Irlandés</h2>
+
+                <!--Div for the text content-->
+                <div class="background">
+                    <p>
+                        En un vaso agrega 120ml de café <a href="#espresso" class="txtLink">espresso</a>, dos cuacharaditas de azucar y 60 ml de wiski, preferentemente irlandés y revolver. Luego en una coctelera, colocar 45 ml de crema de leche y agritar enérgicamente por 10 segundos.
+                    </p>
+
+                    <p>
+                        Para agregar la crema de leche colca una cucharita sobre la superficie de la bebida y agrega lentamente la crema sobre esta, para evitar que se mescle con el café.
+                    </p>
+                </div>
+            </div>
+            
+            <!--Image and epigraph-->
+            <p class="epigraph epigraph2" id="irlandesEp">
+                En esta imágen podemos observar un café irlandés servido en una copa, con crema de leche batida arriba.
+            </p>
+
+            <img src="img/Irlandés.jpeg" class="image imgStyle2 topMargin" id="irlandesImg"/>
+        </article>
+
+        <article id="gradient"> <!--Degradado-->
+        </article>
+
+        <article id="othersArtilces">
+            <div class="background2" id="microespuma">
+                <img src="img/Microespuma.png" class="imgStyle4"/>
+
+                <h2>¿Cómo microespumar leche?</h2>
+                <p>
+                    Vierte la cantidad de leche que vallas a usar en la jarra de latte art.
+                </p>
+                <p>
+                    Luego coloca el vaporizador de tu máquina espresso en la jarra, procurando que esté apenas un centímetro sumegido por debajo de la leche e inclina la jarra de modo que la punta esté entre el centro y la pared, asegurate de seostener la jarra con las dos manos, para con una sentir la temperatura de la leche. Enciende el vaporizador, se escuchara un sonido chirreante y manenlo en esa posición hasta que sientas que la leche se entivie.
+                </p>
+                <p>
+                    Una vez se caliente, sumergelo hasta que tu mano no dure más de 3 segundos sin quemarse.
+                </p>
+            </div>
+
+            <div class="background2" id="espuma">
+                <img src="img/Espuma.jpeg" class="imgStyle4"/>
+                
+                <h2>¿Cómo espumar leche?</h2>
+                <p>
+                    Cuando no tienes una máquina de espresso con vaporizador, puedes usar una prensa francesa para espumar la leche, esto es similar a microespumarla, pero es menos sedosa y las burbujas no son tan pequeñas.
+                </p>
+                <p>
+                    Para debes calentar la leche de modo que esté tibia y viertela en la prensa francesa. Una vez hecho esto, levanta y baja el émbolo tres veces hasta el máximo posible. Luego haz lo mismo por un minuto, pero procura que el filtro permanezca debajo de la leche.
+                </p>
+            </div>
+
+            <div class="background2" id="leche">
+                <img src="img/Leche.png" class="imgStyle4"/>
+
+                <h2>Tips para microespumar o espumar leche</h2>
+                <ul>
+                    <li>
+                        Asegurate que no supere los 70°C, de lo contrario la espuma tendrá un sabor feo y se producirán cambios químicos y físicos irreversbles en la leche.
+                    </li> <br>
+                    <li>
+                        En lo posible, usa leche entera para lograr una mejor concistencia.
+                    </li> <br>
+                    <li>
+                        Al terminar de microespumar o espumar, da un golpe consistente y firme a la jarra o prensa contra la mesada para elimnar burbujas grandes. Luego, sobre la mesada, haz movimientos circulares y firmes, hasta que veas que la leche que gira se vuelva brillante.
+                    </li> <br>
+                    <li>
+                        La leche aumentara de volumen hasta la mitad de su tamaño orignial.
+                    </li> <br>
+                    <li>
+                        El máximo de leche que puedes usar en una jarra es por debajo de su pico, para no arruinar el remolino que forma el vaporizador.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="background2" id="chantilly">
+                <img src="img/Chantilly.jpeg" class="imgStyle4"/>
+                <h2>¿Cómo preparar crema chantilly?</h2>
+                <p>
+                    En un cuenco grande, bate 400 gr de crema de leche,procura que la crema de leche esté fría y haber metido al freezer el cuenco, para que esté frío.
+                </p>
+                <p>
+                    Luego incorpora 80 gr de azúcar y una cucharadita de ecencia de vainilla. Si quieres una chantilly más firme agrega gelatina sin sabor ya hidrtada. Bate hasta qeu la crema esté en su punto firme, procura no pasarte por qeu se cortará la leche.
+                </p>
+            </div>
+
+        </article>
+    </section>
+
+    <footer>
+        <a href="#start">Inicio</a>
+        <a href="mailto:loberzajoaco@gmial.com">Contactame</a>
+    </footer>
+</body>
+</html>
